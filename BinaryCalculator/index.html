@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Arithmetic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Binary Calculator</h1>
+    <p class="subtitle">Binary Arithmetic Simulator</p>
+
+    <label for="num1">Binary Number A</label>
+    <input id="num1" type="text" placeholder="Example: 1010"
+      inputmode="numeric" autocomplete="off">
+
+    <label for="num2">Binary Number B</label>
+    <input id="num2" type="text" placeholder="Example: 0011"
+      inputmode="numeric" autocomplete="off">
+
+    <p class="label">Select Operation</p>
+    <div class="operations">
+      <button data-op="+" class="op">A + B</button>
+      <button data-op="-" class="op">A − B</button>
+      <button data-op="*" class="op">A × B</button>
+      <button data-op="/" class="op">A ÷ B</button>
+    </div>
+
+    <button id="calculate">Calculate Result</button>
+    <button id="clear" class="clear">Clear All</button>
+
+    <section class="result">
+      <h2>Result</h2>
+      <p id="binaryResult">—</p>
+      <p id="decimalResult">Decimal: —</p>
+      <p id="remainderResult"></p>
+      <p id="calculationSteps">Enter two binary numbers to begin.</p>
+    </section>
+    <p id="message" role="status"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
